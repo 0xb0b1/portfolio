@@ -39,10 +39,33 @@ export const MenuTitle = styled.div`
 export const TitleBox = styled.div`
   flex-direction: column;
 
-  h3 {
+  .tile {
     font-size: 3rem;
     font-weight: 900;
     text-transform: uppercase;
+    position: relative;
+
+    cursor: pointer;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+
+      height: 100%;
+
+      overflow: hidden;
+
+      transform: scale(0);
+
+      transition: all 0.4s;
+      /* content: attr(title); */
+    }
+
+    &:hover::before {
+      transform: scale(1.1);
+    }
   }
 
   p {
@@ -71,6 +94,12 @@ export const Social = styled.div`
 
 export const SocialButtons = styled.div`
   font-size: 2rem;
-  margin: 0 auto;
-  padding: 1rem;
+  /* margin: 0 auto; */
+  padding: 2rem;
+
+  color: rgb(230, 219, 116);
+
+  .sc-icons {
+    margin: 0.85rem;
+  }
 `;

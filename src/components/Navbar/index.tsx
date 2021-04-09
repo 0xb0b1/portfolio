@@ -18,31 +18,31 @@ import {
   FaDiscord,
 } from "react-icons/fa";
 
-function Navbar() {
+function Navbar(title: string) {
   return (
     <GridContainer>
       <ContentLinks>
         <MenuTitle>
-          <TitleBox>
-            <h3>Works</h3>
+          <TitleBox className="text-primary">
+            <h3 className="tile">Works</h3>
             <p>Things I've done.</p>
           </TitleBox>
         </MenuTitle>
         <MenuTitle>
-          <TitleBox>
-            <h3>About</h3>
+          <TitleBox className="text-secondary">
+            <h3 className="tile">About</h3>
             <p>Get to know me.</p>
           </TitleBox>
         </MenuTitle>
         <MenuTitle>
-          <TitleBox>
-            <h3>Nuggets</h3>
+          <TitleBox className="text-secondary">
+            <h3 className="tile">Nuggets</h3>
             <p>Snippets that teach you about something new.</p>
           </TitleBox>
         </MenuTitle>
         <MenuTitle>
-          <TitleBox>
-            <h3>Posts</h3>
+          <TitleBox className="text-primary">
+            <h3 className="tile">Posts</h3>
             <p>My blog where I post about things that I like.</p>
           </TitleBox>
         </MenuTitle>
@@ -50,11 +50,11 @@ function Navbar() {
       <Social>
         <span>Paulo Vicente</span>
         <SocialButtons>
-          <FaGithub />
-          <FaLinkedinIn />
-          <FaTwitter />
-          <FaInstagram />
-          <FaTelegram />
+          <FaGithub className="sc-icons" />
+          <FaLinkedinIn className="sc-icons" />
+          <FaTwitter className="sc-icons" />
+          <FaInstagram className="sc-icons" />
+          <FaTelegram className="sc-icons" />
         </SocialButtons>
       </Social>
     </GridContainer>
