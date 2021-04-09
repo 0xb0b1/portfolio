@@ -1,16 +1,22 @@
+// my styled components
 import {
   GridContainer,
-  GridContentLinks,
   ContentLinks,
   Social,
   SocialButtons,
   MenuTitle,
   TitleBox,
-  Works,
-  About,
-  Nuggets,
-  Posts,
 } from "./styles";
+
+// font-awesome icons
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaTwitter,
+  FaInstagram,
+  FaTelegram,
+  FaDiscord,
+} from "react-icons/fa";
 
 function Navbar() {
   return (
@@ -31,21 +37,25 @@ function Navbar() {
         <MenuTitle>
           <TitleBox>
             <h3>Nuggets</h3>
-            <p>Bite sized posts that teach you something new.</p>
+            <p>Snippets that teach you about something new.</p>
           </TitleBox>
         </MenuTitle>
         <MenuTitle>
           <TitleBox>
             <h3>Posts</h3>
-            <p>My ramblings about things that excite me.</p>
+            <p>My blog where I post about things that I like.</p>
           </TitleBox>
         </MenuTitle>
       </ContentLinks>
       <Social>
-        <div>
-          <span>Paulo Vicente</span>
-          <SocialButtons></SocialButtons>
-        </div>
+        <span>Paulo Vicente</span>
+        <SocialButtons>
+          <FaGithub />
+          <FaLinkedinIn />
+          <FaTwitter />
+          <FaInstagram />
+          <FaTelegram />
+        </SocialButtons>
       </Social>
     </GridContainer>
   );

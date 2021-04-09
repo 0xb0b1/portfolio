@@ -1,17 +1,15 @@
 import styled from "styled-components";
 
-export const GridContainer = styled.div`
+export const GridContainer = styled.nav`
   height: 100vh;
   width: 100%;
-
-  /* font-family: "Nunito Sans", sans-serif; */
 
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr;
 `;
 
-export const GridContentLinks = styled.div``;
+// export const GridContentLinks = styled.div``;
 
 export const ContentLinks = styled.div`
   grid-column: 1/2;
@@ -28,12 +26,6 @@ export const MenuTitle = styled.div`
 
   padding: 0 0 2rem 1rem;
 
-  text-transform: uppercase;
-
-  h3 {
-    font-size: 3rem;
-    font-weight: 900;
-  }
   background-color: rgb(25, 30, 35);
   color: rgb(230, 219, 116);
 
@@ -46,6 +38,16 @@ export const MenuTitle = styled.div`
 
 export const TitleBox = styled.div`
   flex-direction: column;
+
+  h3 {
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+
+  p {
+    font: 400 1.2rem "Nunito Sans", sans-serif;
+  }
 `;
 
 export const Social = styled.div`
@@ -58,21 +60,17 @@ export const Social = styled.div`
   align-items: center;
   justify-content: center;
 
-  div {
-    display: flex;
-    flex-direction: column;
+  flex-direction: column;
 
-    span {
-      font-size: 4rem;
-      color: #f20a72;
-      font-family: "Dela Gothic One", cursive;
-    }
+  span {
+    font-size: 4rem;
+    color: #f20a72;
+    font-family: "Dela Gothic One", cursive;
   }
 `;
 
-export const SocialButtons = styled.div``;
-
-export const Works = styled.div``;
-export const About = styled.div``;
-export const Nuggets = styled.div``;
-export const Posts = styled.div``;
+export const SocialButtons = styled.div`
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 1rem;
+`;
