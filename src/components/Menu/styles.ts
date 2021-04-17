@@ -7,6 +7,11 @@ export const GridContainer = styled.nav`
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-template-rows: 1fr;
+
+  @media (max-width: 720px) {
+    display: flex;
+    flex-direction: column;
+  }
 `;
 
 // export const GridContentLinks = styled.div``;
@@ -17,6 +22,10 @@ export const ContentLinks = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+
+  @media (max-width: 720px) {
+    grid-column: 2;
+  }
 `;
 
 export const MenuTitle = styled.div`

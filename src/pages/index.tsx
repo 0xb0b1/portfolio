@@ -2,7 +2,7 @@ import { useEffect } from "react";
 
 import GlobalStyles from "../styles/global";
 
-import Navbar from "../components/Navbar";
+import Menu from "../components/Menu";
 import HomePage from "../components/HomePage";
 
 export default function Home() {
@@ -12,7 +12,7 @@ export default function Home() {
 
       {/* <HomePage /> */}
 
-      <Navbar />
+      <Menu />
     </>
   );
 }
