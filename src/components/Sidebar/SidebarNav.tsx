@@ -8,7 +8,7 @@ import { RiCodeSSlashLine, RiContactsLine } from "react-icons/ri";
 
 export const SidebarNav = () => {
   return (
-    <Box shadow="md" rounded="md">
+    <Box>
       <Flex justify="space-between" direction="column">
         <Stack spacing="12" align="flex-start" justify="center">
           <NavLink href="/about" icon={SiAboutDotMe}>
