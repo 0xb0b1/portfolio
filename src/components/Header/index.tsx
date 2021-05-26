@@ -1,6 +1,6 @@
 import { Flex, Icon, IconButton, useBreakpointValue } from "@chakra-ui/react";
 
-import { RiMenuLine } from "react-icons/ri";
+import { RiMenu4Line } from "react-icons/ri";
 import { useMenu } from "../../contexts/MenuDrawerContext";
 
 import { Logo } from "./Logo";
@@ -27,7 +27,7 @@ export const Header = () => {
     >
       <IconButton
         aria-label="Open navitation"
-        icon={<Icon as={RiMenuLine} />}
+        icon={<Icon as={RiMenu4Line} />}
         fontSize="24"
         mr="2"
         variant="unstyled"
@@ -35,7 +35,7 @@ export const Header = () => {
         position="absolute"
       />
 
-      <Logo name={isSmallVersion ? "PauloVicente" : "PV"} />
+      {/* <Logo name={isSmallVersion ? "PauloVicente" : "PV"} /> */}
     </Flex>
   );
 };
