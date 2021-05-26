@@ -8,7 +8,15 @@ export const Home = () => {
     <Flex direction="column" h="100vh">
       <Header />
 
-      <Flex w="100%" my="6" maxWidth={1480} mx="auto" px="6">
+      <Flex
+        w="100%"
+        my="6"
+        maxWidth={1480}
+        mx="auto"
+        px="6"
+        align="center"
+        justify="center"
+      >
         <Sidebar />
       </Flex>
     </Flex>
