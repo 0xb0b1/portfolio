@@ -1,6 +1,7 @@
 import { Flex, Box, Text, SimpleGrid } from "@chakra-ui/react";
 
 import { Header } from "../components/Header";
+import { HomeContainer } from "../components/HomeContainer";
 import { Sidebar } from "../components/Sidebar";
 
 export const Home = () => {
@@ -18,6 +19,8 @@ export const Home = () => {
         justify="center"
       >
         <Sidebar />
+
+        <HomeContainer />
       </Flex>
     </Flex>
   );
