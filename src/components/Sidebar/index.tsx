@@ -25,12 +25,18 @@ export const Sidebar = () => {
   return (
     <Drawer isOpen={isOpen} placement="left" onClose={() => {}}>
       <DrawerOverlay>
-        <DrawerContent color="alphaWhite" bg="gray.900" p="4">
+        <DrawerContent color="gray.50" bg="gray.900" p="4">
           <DrawerCloseButton onClick={onClose} mt="6" />
 
-          <DrawerHeader>Navigation</DrawerHeader>
+          <DrawerHeader
+            textTransform="uppercase"
+            fontWeight="900"
+            fontSize="24"
+          >
+            Navigation
+          </DrawerHeader>
 
-          <DrawerBody>
+          <DrawerBody mx="auto" mt="10">
             <SidebarNav />
           </DrawerBody>
         </DrawerContent>

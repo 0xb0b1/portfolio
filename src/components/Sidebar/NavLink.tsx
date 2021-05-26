@@ -11,9 +11,14 @@ interface NavLinkProps {
 export const NavLink = ({ icon, children, href, ...rest }: NavLinkProps) => {
   return (
     <ActiveLink href={href} passHref>
-      <ChakraLink display="flex" align="center" {...rest}>
+      <ChakraLink
+        display="flex"
+        align="center"
+        _hover={{ color: "pink.500" }}
+        {...rest}
+      >
         <Icon as={icon} fontSize="20" />
-        <Text ml="4" fontWeight="medium">
+        <Text ml="4" fontWeight="medium" fontSize="20">
           {children}
         </Text>
       </ChakraLink>
