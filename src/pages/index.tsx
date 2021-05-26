@@ -1,18 +1,18 @@
-import { useEffect } from "react";
+import { Flex } from "@chakra-ui/react";
 
-import GlobalStyles from "../styles/global";
+import { Header } from "../components/Header";
+import { Sidebar } from "../components/Sidebar";
 
-import Menu from "../components/Menu";
-import HomePage from "../components/HomePage";
-
-export default function Home() {
+export const Home = () => {
   return (
-    <>
-      <GlobalStyles />
+    <Flex direction="column" h="100vh">
+      <Header />
 
-      {/* <HomePage /> */}
-
-      <Menu />
-    </>
+      <Flex w="100%" my="6" maxWidth={1480} mx="auto" px="6">
+        <Sidebar />
+      </Flex>
+    </Flex>
   );
-}
+};
+
+export default Home;
