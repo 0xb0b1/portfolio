@@ -1,8 +1,17 @@
-import { Flex, Box, Text, SimpleGrid } from "@chakra-ui/react";
+import {
+  Flex,
+  Box,
+  Text,
+  SimpleGrid,
+  Center,
+  IconButton,
+  Icon,
+} from "@chakra-ui/react";
 
 import { Header } from "../components/Header";
 import { HomeContainer } from "../components/HomeContainer";
 import { Sidebar } from "../components/Sidebar";
+import { SocialButton } from "../components/SocialButton";
 
 export const Home = () => {
   return (
@@ -20,7 +29,15 @@ export const Home = () => {
       >
         <Sidebar />
 
-        <HomeContainer />
+        <Flex
+          direction="column"
+          fontSize={["3xl", "5xl", "7xl"]}
+          mt={["20", "10", "2"]}
+        >
+          <HomeContainer />
+
+          <SocialButton />
+        </Flex>
       </Flex>
     </Flex>
   );

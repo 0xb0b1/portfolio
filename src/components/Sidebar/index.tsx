@@ -31,7 +31,7 @@ export const Sidebar = () => {
           <DrawerHeader
             textTransform="uppercase"
             fontWeight="900"
-            fontSize="24"
+            fontSize="20"
           >
             Navigation
           </DrawerHeader>

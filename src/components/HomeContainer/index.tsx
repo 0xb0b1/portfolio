@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { Box } from "@chakra-ui/react";
 
 export const HomeContainer = () => {
   const name = "Hey, I'm Paulo";
@@ -30,38 +29,34 @@ export const HomeContainer = () => {
   };
 
   return (
-    <Box>
-      <motion.h3
-        className="load-screen--message"
-        variants={sentence}
-        initial="hidden"
-        animate="visible"
-        style={{
-          fontSize: "4rem",
-          fontFamily: "Lato",
-          fontWeight: 900,
-          textAlign: "center",
-          marginTop: "5rem",
-        }}
-      >
-        {name.split("").map((char, index) => (
-          <motion.span key={char + "-" + index} variants={letter}>
-            {char}
-          </motion.span>
-        ))}
+    <motion.h3
+      className="load-screen--message"
+      variants={sentence}
+      initial="hidden"
+      animate="visible"
+      style={{
+        fontFamily: "Lato",
+        fontWeight: 900,
+        textAlign: "center",
+      }}
+    >
+      {name.split("").map((char, index) => (
+        <motion.span key={char + "-" + index} variants={letter}>
+          {char}
+        </motion.span>
+      ))}
 
-        <br />
+      <br />
 
-        {occupation.split("").map((char, index) => (
-          <motion.span
-            style={{ color: "#F2DA" }}
-            key={char + "-" + index}
-            variants={letter}
-          >
-            {char}
-          </motion.span>
-        ))}
-      </motion.h3>
-    </Box>
+      {occupation.split("").map((char, index) => (
+        <motion.span
+          style={{ color: "#F2DA" }}
+          key={char + "-" + index}
+          variants={letter}
+        >
+          {char}
+        </motion.span>
+      ))}
+    </motion.h3>
   );
 };
