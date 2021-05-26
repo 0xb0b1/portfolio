@@ -3,14 +3,7 @@ import { Flex, Icon, IconButton, useBreakpointValue } from "@chakra-ui/react";
 import { RiMenu4Line } from "react-icons/ri";
 import { useMenu } from "../../contexts/MenuDrawerContext";
 
-import { Logo } from "./Logo";
-
 export const Header = () => {
-  const isSmallVersion = useBreakpointValue({
-    base: false,
-    sm: true,
-  });
-
   const { onOpen } = useMenu();
 
   return (
@@ -34,8 +27,6 @@ export const Header = () => {
         onClick={onOpen}
         position="absolute"
       />
-
-      {/* <Logo name={isSmallVersion ? "PauloVicente" : "PV"} /> */}
     </Flex>
   );
 };

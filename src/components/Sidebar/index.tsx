@@ -6,7 +6,6 @@ import {
   DrawerCloseButton,
   DrawerHeader,
   DrawerBody,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 
 import { SidebarNav } from "./SidebarNav";
@@ -15,11 +14,6 @@ import { useMenu } from "../../contexts/MenuDrawerContext";
 import React from "react";
 
 export const Sidebar = () => {
-  const isDrawerSidebar = useBreakpointValue({
-    base: true,
-    lg: false,
-  });
-
   const { onClose, isOpen } = useMenu();
 
   return (

@@ -1,13 +1,4 @@
-import {
-  Flex,
-  Box,
-  Text,
-  SimpleGrid,
-  Center,
-  IconButton,
-  Icon,
-} from "@chakra-ui/react";
-
+import { Flex } from "@chakra-ui/react";
 import { Header } from "../components/Header";
 import { HomeContainer } from "../components/HomeContainer";
 import { Sidebar } from "../components/Sidebar";

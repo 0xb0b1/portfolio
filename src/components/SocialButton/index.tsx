@@ -1,5 +1,4 @@
 import { Center, IconButton, Icon } from "@chakra-ui/react";
-import { FiGithub, FiInstagram, FiLink, FiLinkedin } from "react-icons/fi";
 
 import { socialLinks } from "./social-links";
 
