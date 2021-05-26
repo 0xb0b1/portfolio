@@ -17,7 +17,7 @@ export const NavLink = ({ icon, children, href, ...rest }: NavLinkProps) => {
         _hover={{ color: "pink.500" }}
         {...rest}
       >
-        <Icon as={icon} fontSize="20" />
+        <Icon as={icon} fontSize="2rem" />
         <Text ml="4" fontWeight="medium" fontSize="20">
           {children}
         </Text>
