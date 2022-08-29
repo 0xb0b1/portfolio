@@ -1,4 +1,4 @@
-import { Flex } from "@chakra-ui/react";
+import { Flex, Box} from "@chakra-ui/react";
 
 import { Header } from "../../components/Header";
 import { Sidebar } from "../../components/Sidebar";
@@ -17,6 +17,8 @@ export const About = () => {
         justify="center"
       >
         <Sidebar />
+
+        <Box>hello</Box>
       </Flex>
     </Flex>
   );

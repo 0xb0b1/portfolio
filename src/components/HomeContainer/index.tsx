@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 export const HomeContainer = () => {
-  const name = "Hey, I'm Paulo";
+  const name = "Hey, I'm Paulo Vicente";
   const occupation = "Frontend Developer";
 
   const sentence = {
@@ -29,12 +29,13 @@ export const HomeContainer = () => {
   };
 
   return (
-    <motion.h3
+    <motion.h1
       className="load-screen--message"
       variants={sentence}
       initial="hidden"
       animate="visible"
       style={{
+        // fontSize: "82px",
         fontFamily: "Lato",
         fontWeight: 900,
         textAlign: "center",
@@ -57,6 +58,6 @@ export const HomeContainer = () => {
           {char}
         </motion.span>
       ))}
-    </motion.h3>
+    </motion.h1>
   );
 };

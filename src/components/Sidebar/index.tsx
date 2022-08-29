@@ -10,7 +10,7 @@ import {
 
 import { SidebarNav } from "./SidebarNav";
 
-import { useMenu } from "../../contexts/MenuDrawerContext";
+import { useMenu } from "../../context/MenuDrawerContext";
 import React from "react";
 
 export const Sidebar = () => {

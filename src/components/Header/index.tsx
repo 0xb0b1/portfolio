@@ -1,7 +1,7 @@
 import { Flex, Icon, IconButton, useBreakpointValue } from "@chakra-ui/react";
 
 import { RiMenu4Line } from "react-icons/ri";
-import { useMenu } from "../../contexts/MenuDrawerContext";
+import { useMenu } from "../../context/MenuDrawerContext";
 
 export const Header = () => {
   const { onOpen } = useMenu();

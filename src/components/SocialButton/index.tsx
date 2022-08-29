@@ -15,6 +15,7 @@ export const SocialButton = () => {
           aria-label={item.name}
           icon={<Icon as={item.icon} />}
           _hover={{ color: "pink.500" }}
+          target="_blank"
         />
       ))}
     </Center>
